@@ -13,7 +13,7 @@ let unicorn = null;
  * then assign it to be the value of "Atari"
  *
  */
-
+const videogame_system = 'Atari';
 
 /* Step 3
  *
