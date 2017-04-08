@@ -488,7 +488,6 @@ class Person{
   }
  };
 
- console.log(purchaseLaptop('HP'));
 
 
 /* Step 29
@@ -510,7 +509,6 @@ class Person{
   }
  };
 
- console.log(can)
 
 
 /* Step 30
@@ -533,6 +531,22 @@ class Person{
  *   write
  *
  */
+ class Pen{
+  constructor( color ){
+    this.color = color;
+  }
+  write( str ){
+    return this.color+": "+ str;
+  }
+ }
+
+
+
+
+
+
+
+
 
 
 /* Step 31
