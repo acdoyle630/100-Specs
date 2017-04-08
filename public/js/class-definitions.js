@@ -21,7 +21,7 @@ const videogame_system = 'Atari';
  * and assign the value of sahara_animal to "The Addax"
  *
  */
-
+const sahara_animal = 'The Addax';
 
 /* Step 4
  *
