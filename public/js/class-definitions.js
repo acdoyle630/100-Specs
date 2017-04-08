@@ -232,7 +232,7 @@ const laptopCosts = {
  * "Species"
  *
  */
-
+const livingOrganismClassification = ['Kingdom', 'Phylum', 'Class', 'Order','Family', 'Genus', 'Species'];
 
 /* Step 18
  *
