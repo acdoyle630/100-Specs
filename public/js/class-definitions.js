@@ -426,7 +426,6 @@ const listLivingOrgClass = () =>{
    return currentPlanet + ' is not a planet!';
   }
  };
- console.log(favoritePlanet('Mars'));
 
 
 /* Step 27
@@ -451,7 +450,23 @@ const listLivingOrgClass = () =>{
  *   earnMoney
  *
  */
+class Person{
+  constructor(name, money, age, gender){
+    this.name = name;
+    this.money = money;
+    this.age = age;
+    this.gender = gender;
+  }
+  earnMoney( money ){
+    this.money += money;
+  }
+  spendMoney( money ){
+    this.money -= money;
+  }
+}
 
+const newPerson = new Person('Adam', 10, 28, 'male');
+console.log(newPerson);
 
 /* Step 28
  *
