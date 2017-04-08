@@ -65,7 +65,7 @@ const golden_ratio = 1.61803398874;
  * and assign the value of club_name to "Fight Club"
  *
  */
-
+const club_name = 'Fight Club';
 
 /* Step 9
  *
