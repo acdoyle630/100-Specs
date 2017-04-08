@@ -76,9 +76,9 @@ const club_name = 'Fight Club';
  *   male    => "male"
  *   unknown => undefined
  */
-const gender = {
-  female: female,
-  male: male,
+var gender = {
+  female: 'female',
+  male: 'male',
   unknown: undefined
 };
 
@@ -95,7 +95,12 @@ const gender = {
  *
  */
 
-
+const princess_leia ={
+  name: "Leia Organa",
+  money: 890,
+  age: 20,
+  gender: gender.female
+};
 /* Step 11
  *
  * Define a literal object named "domains"
