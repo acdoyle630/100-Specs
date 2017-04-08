@@ -541,14 +541,6 @@ class Person{
  }
 
 
-
-
-
-
-
-
-
-
 /* Step 31
  *
  * Define an ES5 class named "Garden" with a property for
@@ -575,6 +567,24 @@ class Person{
  *   grow
  *
  */
+class Garden{
+  constructor( plantsTotal, isWatered){
+    this.plantsTotal = plantsTotal;
+    this.isWatered = false;
+  }
+  water(){
+    this.isWatered = true;
+  }
+  grow(){
+    if(this.isWatered === true){
+    this.plantsTotal += 1;
+    this.isWatered = false;
+    //return this.isWatered;
+    } else{
+      return false;
+    }
+  }
+}
 
 
 /* Step 32
