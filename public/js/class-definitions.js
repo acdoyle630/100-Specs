@@ -338,15 +338,27 @@ const installLinux = ( flavor ) => {
  *
  */
 
-const drink = ( beerName ) =>{
-  let beertypes = Object.keys(beers);
-  if(beertypes.indexOf(beerName) >=0 ){
-    return 'This ' + beerName + ' is ' + beers.beerName;
-  }
 
+const drink = ( beerName ) =>{
+  let beerType = Object.keys(beers);
+  let beersDes = Object.values(beers);
+  const index = beerType.indexOf(beerName);
+  if(beerType.indexOf(beerName) >= 0 ){
+  if (Array.isArray(beersDes[index]) === true ){
+    for(var i = 0; i < beersDes[index].length; i++){
+      let beerDescription1 = beersDes[index][0];
+      let beerDescription2 = beersDes[index][1];
+      return 'This ' + beerType[index] + ' is ' + beerDescription1 + ' and ' + beerDescription2+'.';
+    }
+    } else {
+  return 'This ' + beerType[index] + ' is ' + beersDes[index]+'.';
+}
+} else {
+  return false;
+}
 };
 
-console.log(drink('IPA'));
+console.log(drink('Ale'));
 
 
 
