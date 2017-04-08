@@ -112,7 +112,12 @@ const princess_leia ={
  *   jsonformatter.curiousconcept.com => "104.28.5.70"
  *
  */
-
+const domains = {
+  'ycombinator.com': '198.41.190.47',
+  'laughingsquid.com': '162.159.247.97',
+  'slumlordhosting.com': "198.61.179.126",
+  ' jsonformatter.curiousconcept.com': "104.28.5.70"
+};
 
 /* Step 12
  *
@@ -127,7 +132,16 @@ const princess_leia ={
  *   Konqueror  => "konqueror.org"
  *
  */
+const browsers = {
+  Chromium: 'google.com',
+  Safari: 'apple.com',
+  Opera: 'opera.com',
+  Firefox: 'mozilla.com',
+  Sleipnir: 'fenrir-inc.com',
+  Konqueror: 'konqueror.org'
+};
 
+console.log(browsers.Chromium);
 
 /* Step 13
  *
