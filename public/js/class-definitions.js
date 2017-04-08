@@ -141,7 +141,6 @@ const browsers = {
   Konqueror: 'konqueror.org'
 };
 
-console.log(browsers.Safari);
 
 
 /* Step 13
@@ -396,7 +395,9 @@ const browseURL = ( browser ) => {
  * @return {String}
  *
  */
-
+const listLivingOrgClass = () =>{
+ return livingOrganismClassification;
+};
 
 /* Step 26
  *
@@ -417,6 +418,15 @@ const browseURL = ( browser ) => {
  * @return {String}
  *
  */
+ const favoritePlanet = ( currentPlanet ) => {
+  if( planets.indexOf(currentPlanet) >= 0 ){
+    const randomPlanet = Math.floor(Math.random()*8);
+    return "I'm from " + currentPlanet + ", but I wish I could go to " + planets[randomPlanet];
+  } else{
+   return currentPlanet + ' is not a planet!';
+  }
+ };
+ console.log(favoritePlanet('Mars'));
 
 
 /* Step 27
