@@ -116,7 +116,7 @@ const domains = {
   'ycombinator.com': '198.41.190.47',
   'laughingsquid.com': '162.159.247.97',
   'slumlordhosting.com': "198.61.179.126",
-  ' jsonformatter.curiousconcept.com': "104.28.5.70"
+  'jsonformatter.curiousconcept.com': "104.28.5.70"
 };
 
 /* Step 12
@@ -136,12 +136,13 @@ const browsers = {
   Chromium: 'google.com',
   Safari: 'apple.com',
   Opera: 'opera.com',
-  Firefox: 'mozilla.com',
+  Firefox: 'mozilla.org',
   Sleipnir: 'fenrir-inc.com',
   Konqueror: 'konqueror.org'
 };
 
-console.log(browsers.Chromium);
+console.log(browsers.Safari);
+
 
 /* Step 13
  *
@@ -344,21 +345,20 @@ const drink = ( beerName ) =>{
   let beersDes = Object.values(beers);
   const index = beerType.indexOf(beerName);
   if(beerType.indexOf(beerName) >= 0 ){
-  if (Array.isArray(beersDes[index]) === true ){
-    for(var i = 0; i < beersDes[index].length; i++){
-      let beerDescription1 = beersDes[index][0];
-      let beerDescription2 = beersDes[index][1];
-      return 'This ' + beerType[index] + ' is ' + beerDescription1 + ' and ' + beerDescription2+'.';
-    }
-    } else {
-  return 'This ' + beerType[index] + ' is ' + beersDes[index]+'.';
-}
+    if (Array.isArray(beersDes[index]) === true ){
+      for(var i = 0; i < beersDes[index].length; i++){
+        let beerDescription1 = beersDes[index][0];
+        let beerDescription2 = beersDes[index][1];
+          return 'This ' + beerType[index] + ' is ' + beerDescription1 + ' and ' + beerDescription2+'.';
+        }
+      } else {
+    return 'This ' + beerType[index] + ' is ' + beersDes[index]+'.';
+  }
 } else {
   return false;
-}
+  }
 };
 
-console.log(drink('Ale'));
 
 
 
@@ -373,7 +373,19 @@ console.log(drink('Ale'));
  * @return {String if true else return false}
  *
  */
+const browseURL = ( browser ) => {
+  const browserNames = Object.keys(browsers);
+  const urlNames = Object.values(browsers);
+  if(browserNames.indexOf(browser) >= 0){
+    const idex = browserNames.indexOf(browser);
+    return urlNames[idex];
 
+  } else {
+    return false;
+  }
+};
+
+//console.log(browseURL('Safari'));
 
 /* Step 25
  *
