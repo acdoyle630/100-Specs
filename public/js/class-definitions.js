@@ -312,7 +312,13 @@ const addNumbers = (num1, num2)=> {
  * @return {Bool}
  *
  */
-
+const installLinux = ( flavor ) => {
+  if( linuxFlavors.indexOf(flavor) >= 0 ){
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /* Step 23
  *
