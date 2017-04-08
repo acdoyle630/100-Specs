@@ -465,8 +465,6 @@ class Person{
   }
 }
 
-const newPerson = new Person('Adam', 10, 28, 'male');
-console.log(newPerson);
 
 /* Step 28
  *
@@ -479,6 +477,18 @@ console.log(newPerson);
  * @return {String}
  *
  */
+ const purchaseLaptop = ( laptop ) =>{
+  const availableLapTops = Object.keys(laptopCosts);
+  const availableLapTopPrice = Object.values(laptopCosts);
+  const index = availableLapTops.indexOf(laptop);
+  if( availableLapTops.indexOf(laptop) >= 0 ){
+    return ""+availableLapTopPrice[index];
+  } else {
+    return index;
+  }
+ };
+
+ console.log(purchaseLaptop('HP'));
 
 
 /* Step 29
@@ -492,6 +502,15 @@ console.log(newPerson);
  * @return {Bool}
  *
  */
+ const canTalkAbout = ( club ) =>{
+  if( club === club_name){
+    return false;
+  } else {
+    return true;
+  }
+ };
+
+ console.log(can)
 
 
 /* Step 30
