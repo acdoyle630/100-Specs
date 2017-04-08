@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -5,7 +6,7 @@
  *
  */
 
-
+let unicorn = null;
 /* Step 2
  *
  * Declare a variable named "videogame_system"
