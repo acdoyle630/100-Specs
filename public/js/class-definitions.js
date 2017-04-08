@@ -200,8 +200,7 @@ const linuxFlavors = ['Gentoo', 'Fedora', 'Debian', 'Slackware', 'Red Hat', 'Bie
  * "cytosine"
  *
  */
-
-
+const DNA = ["nucleatides", 'guanine', 'adenine', 'thymine', 'cytosine'];
 /* Step 16
  *
  * Define a literal object named "laptopCosts"
