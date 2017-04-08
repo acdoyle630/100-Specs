@@ -337,12 +337,18 @@ const installLinux = ( flavor ) => {
  * @return {Bool when False, String when True}
  *
  */
-const drink = ( beerName ) => {
-  if (beers[beerName] !== undefined){
-    return 'this beer' + beerName + 'is '+ beername.
+
+const drink = ( beerName ) =>{
+  let beertypes = Object.keys(beers);
+  if(beertypes.indexOf(beerName) >=0 ){
+    return 'This ' + beerName + ' is ' + beers.beerName;
   }
 
- }
+};
+
+console.log(drink('IPA'));
+
+
 
 /* Step 24
  *
