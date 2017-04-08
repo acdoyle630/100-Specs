@@ -169,9 +169,9 @@ const rainbow = {
     indigo: "#5215ED",
     violet: "#A915ED"
   },
-
   isDouble: true
 };
+
 
 /* Step 14
  *
@@ -186,7 +186,7 @@ const rainbow = {
  * "Bieber Linux"
  *
  */
-
+const linuxFlavors = ['Gentoo', 'Fedora', 'Debian', 'Slackware', 'Red Hat', 'Bieber Linux'];
 
 /* Step 15
  *
