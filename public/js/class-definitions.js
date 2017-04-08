@@ -48,7 +48,7 @@ const galilean_moons = ['Io', 'Europa', 'Ganymede', 'Callisto'];
  * and assign the value of golden_ratio to 1.61803398874
  *
  */
-
+const golden_ratio = 1.61803398874;
 
 /* Step 7
  *
